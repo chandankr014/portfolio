@@ -230,7 +230,8 @@ section.alt-bg {
       rgba(10, 20, 55, 0.75) 50%,
       rgba(7, 15, 40, 0.88) 100%
     ),
-    url('img/bg.webp') center center / cover no-repeat;
+    /* url('img/bg.webp') center center / cover no-repeat; */
+    url('img/bg2.png') center center / cover no-repeat;
   display: flex;
   align-items: center;
   text-align: center;
