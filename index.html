@@ -1,17 +1,625 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <title>Chandan Kumar — AI Engineer</title>
-    <meta name="description" content="Portfolio of Chandan Kumar, AI Engineer specialized in ML systems, LLM applications, and RAG pipelines." />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chandan Kumar | AI · ML · Data Enthusiast</title>
+  <meta name="description" content="Portfolio of Chandan Kumar – AI, ML & Data Enthusiast working across ML systems, LLM applications, and RAG pipelines.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">CK</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <span class="hero-badge">Welcome to my portfolio</span>
+      <h1 class="hero-name">Chandan Kumar</h1>
+      <p class="hero-title">
+        <span class="hero-title-keywords">AI · ML · Data</span>
+        <span class="hero-title-role">Enthusiast</span>
+      </p>
+      <p class="hero-bio">Working across ML systems, LLM applications, and RAG pipelines, with experience in geospatial and environmental modeling. Built end-to-end data and ML workflows, deployed models on AWS, and developed tooling that accelerates analysis and automation.</p>
+      <div class="hero-actions">
+        <a href="https://github.com/chandankr014" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/chandankr014/" target="_blank" rel="noopener" class="btn btn-outline-orange">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://medium.com/@chandankr014.ai" target="_blank" rel="noopener" class="btn btn-outline-medium">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+          Medium
+        </a>
+        <a href="#contact" class="btn btn-outline-glass">Get in Touch</a>
+      </div>
+      <a href="#about" class="hero-scroll" aria-label="Scroll down">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid reveal">
+        <div class="about-card blue-card">
+          <div class="about-icon blue">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Technical Expertise</h3>
+          <p>Specialized in building intelligent systems using cutting-edge AI/ML technologies. Proficient in deep learning frameworks, LLM applications, and MLOps practices.</p>
+        </div>
+        <div class="about-card orange-accent">
+          <div class="about-icon orange">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg>
+          </div>
+          <h3>Innovation Focus</h3>
+          <p>Passionate about implementing advanced RAG techniques, building agentic AI systems, and creating data-driven solutions that solve real-world problems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section id="experience" class="alt-bg">
+    <div class="container">
+      <h2 class="section-title">Work Experience</h2>
+      <div class="experience-list reveal">
+
+        <!-- AI Engineer -->
+        <div class="exp-card blue-card">
+          <div class="exp-header">
+            <div class="exp-left">
+              <div class="exp-icon blue">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+              </div>
+              <div>
+                <div class="exp-title">AI Engineer</div>
+                <div class="exp-company">AIResQ ClimSols - IIT Gandhinagar Research Park</div>
+              </div>
+            </div>
+            <span class="exp-date blue">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg>
+              Nov 2025 - Present
+            </span>
+          </div>
+          <div class="exp-bullets">
+            <div class="exp-bullet">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              Worked on data preprocessing pipelines and scenario-based flood modeling across different conditions
+            </div>
+            <div class="exp-bullet">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              Built and experimented with models like U-Net and FNO, incorporating physics-informed constraints for improved realism and generalization
+            </div>
+            <div class="exp-bullet">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              Curated datasets independently by transforming numerical data into structured textual formats, integrating multiple sources
+            </div>
+            <div class="exp-bullet">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              Integrated AI-driven analytics into a multi-layer geospatial dashboard, enabling natural language querying over structured spatial data
+            </div>
+          </div>
+        </div>
+
+        <!-- Sr. Project Technical Assistant -->
+        <div class="exp-card orange-card">
+          <div class="exp-header">
+            <div class="exp-left">
+              <div class="exp-icon orange">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+              </div>
+              <div>
+                <div class="exp-title">Sr. Project Technical Assistant</div>
+                <div class="exp-company">Indian Institute of Technology Bombay</div>
+              </div>
+            </div>
+            <span class="exp-date orange">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg>
+              Sept 2024 - Oct 2025
+            </span>
+          </div>
+          <div class="exp-bullets">
+            <div class="exp-bullet">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              Developed real-time data pipelines in Python for streaming sensor data and integrated predictive time-series models on AWS EC2
+            </div>
+            <div class="exp-bullet">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              Built automated pipelines for large-scale satellite-based atmospheric data downloading, preprocessing, and integration
+            </div>
+            <div class="exp-bullet">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              Developed a data cleaning and standardization module for CPCB ground station data, released as open-source package on PyPI (airpy-tool)
+            </div>
+            <div class="exp-bullet">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              Designed comprehensive ML pipeline with hyperparameter tuning (GridSearchCV, Optuna, Grey Wolf Optimization) for PM2.5 forecasting across 30 Indian cities
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Science Intern -->
+        <div class="exp-card blue-card">
+          <div class="exp-header">
+            <div class="exp-left">
+              <div class="exp-icon blue">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+              </div>
+              <div>
+                <div class="exp-title">Data Science Intern</div>
+                <div class="exp-company">Jal Jeevan Mission, IIM Bangalore</div>
+              </div>
+            </div>
+            <span class="exp-date blue">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/></svg>
+              Jan 2024 - Aug 2024
+            </span>
+          </div>
+          <div class="exp-bullets">
+            <div class="exp-bullet">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              Automated data scraping tasks using Selenium and BeautifulSoup, significantly improving efficiency and accuracy of data collection
+            </div>
+            <div class="exp-bullet">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              Built and deployed district-level dashboards for Karnataka on organization's Windows Server
+            </div>
+            <div class="exp-bullet">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              Developed an Indic languages AI chatbot system using RAG architecture, trained on domain-specific and customized data
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills-grid reveal">
+
+        <div class="skill-card blue-card">
+          <h3>Programming</h3>
+          <div class="tags">
+            <span class="tag blue">Python</span>
+            <span class="tag blue">Object-Oriented Programming</span>
+            <span class="tag blue">Data Structures and Algorithms</span>
+          </div>
+        </div>
+
+        <div class="skill-card blue-card">
+          <h3>Machine Learning &amp; Deep Learning</h3>
+          <div class="tags">
+            <span class="tag blue">Scikit-learn</span>
+            <span class="tag blue">TensorFlow</span>
+            <span class="tag blue">PyTorch</span>
+            <span class="tag blue">Keras</span>
+            <span class="tag blue">Ray</span>
+            <span class="tag blue">Optuna</span>
+            <span class="tag blue">Neural Network Architecture</span>
+            <span class="tag blue">Transfer Learning</span>
+            <span class="tag blue">Time Series Forecasting</span>
+          </div>
+        </div>
+
+        <div class="skill-card orange-card">
+          <h3>LLMs &amp; Agentic AI</h3>
+          <div class="tags">
+            <span class="tag orange">LangChain</span>
+            <span class="tag orange">LangGraph</span>
+            <span class="tag orange">LlamaIndex</span>
+            <span class="tag orange">DSPy</span>
+            <span class="tag orange">Vector Database</span>
+            <span class="tag orange">RAG Pipeline</span>
+            <span class="tag orange">Prompt Engineering</span>
+            <span class="tag orange">MCP</span>
+          </div>
+        </div>
+
+        <div class="skill-card blue-card">
+          <h3>MLOps &amp; Deployment</h3>
+          <div class="tags">
+            <span class="tag blue">FastAPI</span>
+            <span class="tag blue">Flask</span>
+            <span class="tag blue">Docker</span>
+            <span class="tag blue">MLflow</span>
+            <span class="tag blue">Weights &amp; Biases</span>
+            <span class="tag blue">Git</span>
+            <span class="tag blue">CI/CD with GitHub Actions</span>
+            <span class="tag blue">ONNX Runtime</span>
+            <span class="tag blue">Kubernetes (basics)</span>
+          </div>
+        </div>
+
+        <div class="skill-card blue-card">
+          <h3>Data Processing</h3>
+          <div class="tags">
+            <span class="tag blue">NumPy</span>
+            <span class="tag blue">Pandas</span>
+            <span class="tag blue">PySpark</span>
+            <span class="tag blue">GeoPandas</span>
+            <span class="tag blue">Folium</span>
+            <span class="tag blue">Web Scraping</span>
+          </div>
+        </div>
+
+        <div class="skill-card orange-card">
+          <h3>Cloud &amp; Databases</h3>
+          <div class="tags">
+            <span class="tag orange">AWS (EC2, S3, Lambda)</span>
+            <span class="tag orange">MongoDB</span>
+            <span class="tag orange">SQLite</span>
+            <span class="tag orange">NoSQL</span>
+            <span class="tag orange">Satellite &amp; Earth Observation Data Pipelines</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="alt-bg">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects-list reveal">
+
+        <!-- Advanced RAG -->
+        <div class="project-card blue-card">
+          <div class="project-header">
+            <div class="project-icon blue">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4"/><path d="M12 19v4"/><path d="M4.22 4.22l2.83 2.83"/><path d="M16.95 16.95l2.83 2.83"/><path d="M1 12h4"/><path d="M19 12h4"/><path d="M4.22 19.78l2.83-2.83"/><path d="M16.95 7.05l2.83-2.83"/></svg>
+            </div>
+            <div class="project-info">
+              <h3>Advanced RAG</h3>
+              <p>A sophisticated PDF question-answering chatbot that implements multiple advanced Retrieval-Augmented Generation (RAG) techniques for improved accuracy and reasoning capabilities.</p>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span class="tag blue">LangChain</span>
+            <span class="tag blue">LlamaIndex</span>
+            <span class="tag blue">Vector Database</span>
+            <span class="tag blue">Knowledge Graph</span>
+            <span class="tag blue">Chain-of-Thought</span>
+          </div>
+          <div class="project-highlights">
+            <h4>Key Highlights:</h4>
+            <ul>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                Designed modular RAG system adapting to query complexity using multiple reasoning strategies
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                Implemented Auto Mode to dynamically select appropriate retrieval and reasoning strategy
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                Developed session-scoped memory to maintain conversational context and improve multi-step query handling
+              </li>
+            </ul>
+          </div>
+          <hr class="project-divider">
+          <div class="rag-techniques">
+            <h4>Advanced RAG Techniques:</h4>
+            <div class="techniques-grid">
+              <div class="technique-item blue">
+                <h5>LLM-Powered Decomposition</h5>
+                <p>Breaks complex questions into simpler sub-questions</p>
+              </div>
+              <div class="technique-item orange">
+                <h5>Chain-of-Thought (CoT) Prompting</h5>
+                <p>Uses step-by-step reasoning to answer questions</p>
+              </div>
+              <div class="technique-item orange">
+                <h5>Graph-Based Reasoning</h5>
+                <p>Builds and queries a knowledge graph of entities and relationships</p>
+              </div>
+              <div class="technique-item orange">
+                <h5>Auto Technique Selection</h5>
+                <p>Automatically chooses the best technique based on question complexity</p>
+              </div>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/chandankr014/RAG" target="_blank" rel="noopener" class="btn-project">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Route-Planner -->
+        <div class="project-card orange-card">
+          <div class="project-header">
+            <div class="project-icon orange">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </div>
+            <div class="project-info">
+              <h3>Route-Planner</h3>
+              <p>Built a train search app with AI-powered personalized recommendations for travel planning.</p>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span class="tag orange">Playwright</span>
+            <span class="tag orange">vLLM</span>
+            <span class="tag orange">FastAPI</span>
+            <span class="tag orange">Local LLM</span>
+          </div>
+          <div class="project-highlights">
+            <h4>Key Highlights:</h4>
+            <ul>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                Built train search using Playwright for faster scraping, cutting search time by 3-4x compared to Selenium
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                Served local LLM via vLLM for inference, generating personalized train recommendations based on user preferences
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                Exposed search and recommendation features through a versioned FastAPI
+              </li>
+            </ul>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/chandankr014/route-planner" target="_blank" rel="noopener" class="btn-project">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+        <!-- Airpy Tool -->
+        <div class="project-card blue-card">
+          <div class="project-header">
+            <div class="project-icon blue">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <div class="project-info">
+              <h3>Airpy – Air Pollution Data Cleaning Module</h3>
+              <p>A Python package for cleaning and processing CPCB (Central Pollution Control Board) air quality data for official government and research use.</p>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span class="tag blue">Python</span>
+            <span class="tag blue">PyPI</span>
+            <span class="tag blue">Data Cleaning</span>
+            <span class="tag blue">CPCB</span>
+            <span class="tag blue">Air Quality</span>
+          </div>
+          <div class="project-highlights">
+            <h4>Key Highlights:</h4>
+            <ul>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                Flexible input — process single files or entire directories in CSV and Excel (XLSX/XLS) formats
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                Auto-detects filename format, extracts metadata, removes outliers and consecutive repeats
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                Unit standardization — converts all nitrogen compounds to µg/m³ with debug-friendly verbose mode
+              </li>
+            </ul>
+          </div>
+          <div class="project-footer" style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+            <a href="https://github.com/chandankr014/airpy-tool" target="_blank" rel="noopener" class="btn-project">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              View on GitHub
+            </a>
+            <a href="https://pypi.org/project/airpy-tool/" target="_blank" rel="noopener" class="btn-project">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+              View on PyPI
+            </a>
+          </div>
+        </div>
+
+        <!-- Student Performance Prediction -->
+        <div class="project-card orange-card">
+          <div class="project-header">
+            <div class="project-icon orange">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg>
+            </div>
+            <div class="project-info">
+              <h3>Student Performance Prediction</h3>
+              <p>Machine learning system to classify student performance with end-to-end pipeline and deployment.</p>
+            </div>
+          </div>
+          <div class="project-tags">
+            <span class="tag orange">Scikit-learn</span>
+            <span class="tag orange">Flask</span>
+            <span class="tag orange">AWS EC2</span>
+            <span class="tag orange">MongoDB</span>
+          </div>
+          <div class="project-highlights">
+            <h4>Key Highlights:</h4>
+            <ul>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                Developed ML model following industrial approach with pipelining for efficient data ingestion and prediction workflows
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                Built Flask webapp and deployed on AWS EC2 monolithic server
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+                Integrated user authentication and secure data storage using MongoDB
+              </li>
+            </ul>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/chandankr014/student-performance-prediction" target="_blank" rel="noopener" class="btn-project">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              View on GitHub
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="edu-card reveal">
+        <div class="edu-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg>
+        </div>
+        <div class="edu-info">
+          <h3>B.Tech in Computer Science and Technology</h3>
+          <div class="edu-school">University of Engineering and Management, Kolkata</div>
+          <div class="edu-badges">
+            <span class="edu-badge year">2020 - 2024</span>
+            <span class="edu-badge cgpa">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+              CGPA: 8.8/10
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PUBLICATIONS ========== -->
+  <section id="publications" class="alt-bg">
+    <div class="container">
+      <h2 class="section-title">Publications</h2>
+      <div class="pub-list reveal">
+
+        <div class="pub-card blue-card">
+          <div class="pub-header">
+            <div class="pub-icon blue">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <div class="pub-info">
+              <h3>Assessing Performance of The Jal Jeevan Mission Using a Geospatial Decision Support System</h3>
+              <p class="pub-meta"><span>Conference:</span> Center for Public Policy, IIM Bangalore</p>
+            </div>
+          </div>
+          <a href="https://drive.google.com/file/d/1r5EWQckUIMQiPMMRP-IcofhorP6FUujd/view" target="_blank" rel="noopener" class="btn-pub">
+            View Publication
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+
+        <div class="pub-card orange-card">
+          <div class="pub-header">
+            <div class="pub-icon orange">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <div class="pub-info">
+              <h3>Central Bank Digital Currency (CBDC) and Application Development</h3>
+              <p class="pub-meta"><span>Authors:</span> Dr. Prasenjit Das, Magapu Shanmukh, Chandan Kumar, Shubham Kulkarni</p>
+              <p class="pub-meta"><span>DOI:</span> 10.22214/ijraset.2023.57703</p>
+            </div>
+          </div>
+          <a href="https://doi.org/10.22214/ijraset.2023.57703" target="_blank" rel="noopener" class="btn-pub">
+            View Publication
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <div class="contact-card reveal">
+        <p>I'm always interested in hearing about new opportunities, collaborations, or just connecting with fellow AI/ML enthusiasts. Feel free to reach out!</p>
+        <div class="contact-actions">
+          <a href="mailto:chandankr014@gmail.com" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Email Me
+          </a>
+          <a href="https://github.com/chandankr014" target="_blank" rel="noopener" class="btn btn-outline-gray">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/chandankr014/" target="_blank" rel="noopener" class="btn btn-outline-orange">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://medium.com/@chandankr014.ai" target="_blank" rel="noopener" class="btn btn-outline-medium-dark">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+            Medium
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-name">Chandan Kumar</div>
+          <div class="footer-role">AI · ML · Data Enthusiast</div>
+        </div>
+        <nav class="footer-nav">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-socials">
+          <a href="https://github.com/chandankr014" target="_blank" rel="noopener" class="footer-social-link" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/chandankr014/" target="_blank" rel="noopener" class="footer-social-link" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://medium.com/@chandankr014.ai" target="_blank" rel="noopener" class="footer-social-link" aria-label="Medium">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 0 1-6.77 6.82A6.8 6.8 0 0 1 0 12a6.8 6.8 0 0 1 6.77-6.82A6.8 6.8 0 0 1 13.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+          </a>
+          <a href="mailto:chandankr014@gmail.com" class="footer-social-link" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
