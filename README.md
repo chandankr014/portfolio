@@ -1,3 +1,3 @@
 # Portfolio
 
-🔗 **https://chandankr014.github.io/Portfolio**
+🔗 **https://chandankr014.github.io/portfolio**
